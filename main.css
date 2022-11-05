@@ -141,7 +141,7 @@ body {
 }
 
 .container1{
-    background-image:url(background3.jpg);
+    background-image:url(/background3.jpg);
     background-size:cover;
     
     display: flex;

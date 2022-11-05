@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiva-Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="left">        
+            <a href="#">Port<span class="red-font">F</span>olio</a>
+        </div>
+       
+        <div class="right">
+            <ul>
+                <li> <a href="# " class="red-font">HOME</a> </li>
+                <li> <a href="#about">ABOUT</a> </li>
+                <li> <a href="#">PROJECTS</a> </li>
+                <li> <a href="#" class="red-font">RESUME</a> </li>
+                <li> <a href="#">BLOG</a> </li>
+                <li> <a href="#contact">CONTACT</a> </li>
+                   
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container1">
+        <div class="left-container1 glow">
+           <span> Hi, I'm </span><span class="red-font">Shiva Kumar.</span> <br>
+            <div class="subtittle glow"> ~Web Developer
+            </div>
+        </div>
+
+        <div class="right-container1">
+            <img src="/images/pfimg3.jpg" alt="" srcset="">
+        </div>
+    </div>
+    <div id="about">
+
+        
+    </div>
+    <br>
+    <br>
+    <br>
+
+   
+    <div class="container2" >
+        <h2 class="abt ">ABOUT ME</h2>
+        <div  class="about-container">
+            <div class="left-about">
+                <img src="/images/pfimg1.jpg" alt="" srcset="">
+            </div>
+            <div class="right-about">
+               
+                    <div class="tab-tittles">
+                        <p class="tab-links red-font active-link" onclick="opentab('skills')" >Skills</p>
+                        <p class="tab-links red-font " onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links red-font " onclick="opentab('education')" >Education</p>
+                    </div>
+                
+                    <div class="tab-contents active-tabs" id="skills">
+                        <ul>
+                            <li><span>UI & UX</span> <br> Designing Web interfaces</li>
+                            <li><span>Web development</span> <br> Designing Websites</li>
+                            <li><span>Data Science</span> <br>Analysing the data and representing</li>
+                        </ul>
+                </div>
+                    <div class="tab-contents " id="experience">
+                        <ul>
+                            <li><span>2023</span> <br> Internship on WEB DEVELOPMENT</li>
+                            <li><span>2022</span> <br>Asst. Data Analyser at Siri Enterprises</li>
+                            <li><span>2022</span> <br> Internship at SWAYAM on DATASCIENCE</li>
+                        </ul>
+                </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            
+                            <li><span>2000-2024</span> <br>BTECH ~ CSE(DS) ~ TKR College of Engineering.</li>
+                            <li><span>2018-2000</span> <br>MPC ~ Narayana Junior College</li>
+                            
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container2" id= "contact">
+        <h2 class="abt main-title">CONTACT ME</h2>
+                 
+        <div  class="about-container contact-container">
+            
+            <div class="contact-form">
+                <form action="/" class="registration" method="post">
+                    <!-- {% csrf_token %} -->
+                <div class="inputags">
+                    <label for="fname">First Name</label>
+                    <input  type="text" id="fname" > <br>
+                </div>
+                <div class="inputags">
+                    <label for="lname">Last Name</label>
+                    <input type="text"  id="lname" > <br>
+                </div>
+                <div class="inputags">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" > <br>
+                </div>
+                    <div class="inputags">
+                    <label for="mobile">Mobile Number</label>
+                    <input type="mobile" id="mobile" > <br>
+                </div>
+                <div class="inputags">
+                     <label for="text-area">Regarding?</label>
+                    <input type="text" id="reason"> <br>
+                    </div>
+                    <div class="inputags">
+                    <button class="btn" type="submit">
+                        Submit
+                    </button>
+                </div>
+                </form>
+            </div>
+            <div class="left-about ">
+                <img src="/images/pfimg2.jpg" alt="" srcset="">
+            </div>
+            
+        </div>
+    </div>
+    
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+
+        function opentab(tabname) {
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tabs");
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabname).classList.add('active-tabs');
+        }
+       
+    </script>
+
+</body>
+
+</html>

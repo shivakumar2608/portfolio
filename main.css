@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+ 
+}
+
+body {
+    
+    background-color: black;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    display: flex;
+    z-index: 500;
+    flex-direction: row;
+    align-items: center;
+    font-size: 17px;
+    max-width: 100%;
+    background-color: black;
+    position: sticky;
+    top: 0px;
+    /* background-color: aquamarine; */
+}
+
+.left {
+    max-width: 50%;
+    margin: auto;
+    /* background-color: blueviolet; */
+    margin: 0 4px;
+    padding: 10px 25px;
+    /* border: 1px solid black; */
+    cursor: pointer;
+    color: white;
+
+}
+
+.main-border {
+    border: 1px solid black;
+    padding: 10px 25px;
+}
+
+.right {
+    /* max-width: 50%;
+    
+        /* background-color: rgb(43, 41, 46); */
+        margin: auto;
+}
+
+
+
+.red-font{
+    /* color: #ff004f; */
+    color: red;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.left a {
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0 8px;
+    padding: 5px 25px;
+    border: 1px solid black;
+    opacity: 0.8;
+    transition: all 1s;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+        
+}
+
+.left a:hover {
+    list-style-type: none;
+    text-decoration: none;
+    margin:  16px;
+    padding: 5px 25px;
+    border: 1px solid black;
+    cursor: pointer;
+    background-color: rgb(49, 48, 48);
+    color: white;
+    transition: 1s;
+    
+}
+
+.right ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    float: left;
+}
+
+
+ 
+
+.right ul li {
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0 8px;
+    margin:  16px;
+    padding: 5px 25px;
+    border: 1px solid black;
+    opacity: 0.8;
+    transition: all 1s;
+}
+
+.right ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.right .red-font{
+    /* color: #ff004f; */
+    color: red;
+}
+.right ul li:hover {
+    list-style-type: none;
+    text-decoration: none;
+    margin:  16px;
+    padding: 5px 25px;
+    border: 1px solid black;
+    cursor: pointer;
+    background-color: rgb(49, 48, 48);
+    color: white;
+    transition: 1s;
+}
+
+.right ul li a:hover {
+    color: white;
+
+}
+
+.container1{
+    background-image:url(/images/background3.jpg);
+    background-size:cover;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    max-width: 100vw;
+    min-height:100vh ;
+    -webkit-text-stroke: 2px black;
+}
+.left-container1{
+    font-size: 60px;
+    /* border: 2px solid black; */
+    max-width: 50%;
+    position: relative;
+    left: 150px;
+    /* border: 2px solid white; */
+}
+.right-container1{
+    max-width: 50%;
+    /* border: 2px solid white; */
+    /* border: 2px solid white; */
+}
+.subtittle{
+    font-size: 3rem;
+}
+
+.right-container1 img{
+    float: right;
+    border: 1px solid white;
+    border-radius: 100px;
+    max-width: 50%;
+    margin:  auto;
+    text-shadow: 0 0 10px rgb(0, 0, 0), 0 0 20px rgb(92, 88, 88), 0 0 30px #353032, 0 0 40px #3d3439, 0 0 50px #3f373b, 0 0 60px #474044, 0 0 70px #312d2f;
+    
+}
+
+.container2{
+        
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 30px;
+    border: 1px solid white;
+}
+.abt{
+    font-weight: 600;
+    margin: auto;
+    
+}
+
+.about-container{
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+}
+
+.left-about{
+    margin: 10px;
+    text-align: center;
+  
+}
+.left-about img{
+    height: 25vw;
+    margin: 0 30px;
+    /* width: 10vw; */
+
+}
+
+.glow {
+    font-size: 5vw;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-shadow: 0 0 10px rgb(0, 0, 0), 0 0 20px rgb(0, 0, 0), 0 0 30px #000000, 0 0 40px #8d8c8d, 0 0 50px #8f8a8c, 0 0 60px #979596, 0 0 70px #a8a5a7,0 0 80px #dddbdc77;
+  }
+  
+
+.tab-tittles{
+    display: flex;
+    margin: 20px 0 40px;
+    padding: 0 10px ;
+}
+.tab-links{
+    cursor: pointer;
+    font-weight: 550;
+    margin-right: 50px;
+    font-size: 18px;
+    position: relative;
+}
+.tab-links::after{
+    content: " ";
+    width: 0;
+    height: 3px;
+    background: rgb(253, 253, 253) ;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s ;
+}
+.tab-links.active-link::after{
+    width:70%;
+}
+.tab-contents ul li{
+    margin: 10px;
+    font-size: 18px;
+    list-style-type: none;
+    
+}
+.tab-contents ul li span{
+    color: red;
+    font-size: 14px;
+    
+}
+.tab-contents{
+    display: none;
+    margin:3px 0;
+}
+.tab-contents.active-tabs{
+    display: block;
+}
+
+.contact-form {
+    margin: 33px 77px;
+    /* max-width: 85%; */
+    
+}
+
+
+.registration input{
+    margin: 10px;
+    color: black;
+    font-size: 15px;
+    
+    padding: 1.5px;
+}
+.registration label{
+    
+    color: white;
+    font-size: 20px;
+}
+.registration input:hover{
+    margin:10px;
+    padding: 1.5px;
+    /* font-size: 20px; */
+    background-color: rgba(73, 73, 73, 0.747);
+    /* padding-right: 30px; */
+    transition: 1s;
+    color: black;
+  
+}
+
+button{
+    cursor: pointer;
+    position: relative;
+    color: black;
+    margin: 10px;
+    left: 40%;
+    font-weight: 700;
+    padding: 7px 15px;
+}
+button:hover{
+    cursor: pointer;
+    position: relative;
+    left: 40%;
+    background-color: gray;   
+    color: #000000;
+    font-weight: 700;
+    padding: 7px 25px;
+    transition: 2s;
+    
+}
+@media screen and (max-width: 1300px) {
+    .navbar{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+    }
+  }
+@media screen and (max-width: 900px) {
+    .container1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;    
+    }
+    
+    .left{
+        display: none;
+    }
+    .left-container1 {
+        font-size: 60px;
+     
+        max-width: 100%;
+        position: relative;
+        left: 5px;
+    }
+    .right ul{
+        display: none;
+        background-color: rgb(53, 51, 53);
+        position: absolute;
+        /* right: -200px; */
+
+        width: 200px;
+    }
+    
+  .about-container{
+        display: block;
+    }
+    
+}

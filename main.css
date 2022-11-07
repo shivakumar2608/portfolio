@@ -180,13 +180,15 @@ body {
 }
 
 .container2{
-        
+ 
     display: flex;
     flex-direction: column;
-    max-width: 100%;
-    margin: 20px auto;
+    max-width: 80%;
+    margin: 41px auto;
     padding: 30px;
-/*     border: 1px solid white; */
+    border: 1px solid white;
+
+    
 }
 .abt{
     font-weight: 600;

@@ -340,12 +340,7 @@ button:hover{
         left: 5px;
     }
     .right ul{
-        display: none;
-        background-color: rgb(53, 51, 53);
-        position: absolute;
-        /* right: -200px; */
-
-        width: 200px;
+        display: block;
     }
     
   .about-container{
